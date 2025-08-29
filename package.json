@@ -1,0 +1,43 @@
+{
+  "name": "mcp-cloudflare-demo",
+  "version": "1.0.0",
+  "description": "Live demonstration site for deploy-mcp Cloudflare Pages integration",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "build": "npm run build:optimize",
+    "build:optimize": "npm run build:html && npm run build:css && npm run build:js",
+    "build:html": "echo 'HTML optimization - placeholder'",
+    "build:css": "echo 'CSS optimization - placeholder'",
+    "build:js": "echo 'JS optimization - placeholder'",
+    "deploy": "wrangler pages deploy public",
+    "deploy:preview": "wrangler pages deploy public --branch=preview",
+    "functions:build": "wrangler pages functions build",
+    "test": "echo 'Tests to be added'",
+    "lint": "echo 'Linting to be added'",
+    "format": "echo 'Formatting to be added'",
+    "typecheck": "echo 'Type checking to be added'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexpota/mcp-cloudflare-demo.git"
+  },
+  "keywords": [
+    "cloudflare-pages",
+    "pages-functions",
+    "deploy-mcp",
+    "mcp",
+    "deployment-tracking",
+    "serverless",
+    "edge-computing"
+  ],
+  "author": "AlexP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexpota/mcp-cloudflare-demo/issues"
+  },
+  "homepage": "https://github.com/alexpota/mcp-cloudflare-demo#readme",
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}
