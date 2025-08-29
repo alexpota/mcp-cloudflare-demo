@@ -1,37 +1,18 @@
 {
-  // Main configuration
   "name": "mcp-cloudflare-demo",
-  "compatibility_date": "2024-08-29",
+  "compatibility_date": "2025-08-29",
   "compatibility_flags": ["nodejs_compat"],
-  
-  // Pages configuration
   "pages_build_output_dir": "public",
-  
-  // Build settings
   "build": {
     "command": "npm run build"
   },
-  
-  // Environment variables for production
   "vars": {
     "ENVIRONMENT": "production"
   },
-  
-  // Observability (latest feature)
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1
   },
-  
-  // Static assets configuration
-  "assets": {
-    "directory": "./public",
-    "binding": "ASSETS",
-    "html_handling": "auto-trailing-slash",
-    "not_found_handling": "404-page"
-  },
-  
-  // Environment-specific configurations
   "env": {
     "preview": {
       "vars": {
